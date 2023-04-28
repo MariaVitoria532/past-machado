@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+@import "@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,400;1,500;1,700&display=swap')";
+
+/* #1DF035, #FA6F5C, #5FE3D8, #FAA544, #417BF0*/
+
+:root{
+    --cor1:#1DF035;
+    --cor2:#FA6F5C;
+    --cor3:#5FE3D8;
+    --cor4:#FAA544;
+    --cor5:#417BF0;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--cor4);
+    font-family:'Roboto', sans-serif;
+}
+
+header{
+
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor3)); /*direção, a 1º cor, 2º cor)*/
+    min-height: 130px;/*altura mínima*/
+    text-align: center;/*Alinhamento de texto*/
+    padding-top: 50px;/*Espaçamento dentro da caixa na parte superior*/
+}
+
+header> h1{
+    color: black;
+    font-weight: 900px; /*peso da fonte, espessura do negrito*/
+    margin-bottom: 20px; /*espaço até o proximo elemento, no caso inferior*/
+} 
+
+header > p{ 
+    color:rgb(150, 48, 48);
+}
+
+/*header p{
+    color:aqua
+}*/
+
+nav{
+    background-color: var(--cor3);
+    padding: 10px; /* mesmo espaçamento para os 4 lados*/
+    box-shadow: 17px 2px 12px 1px blue;
+}
+
+nav > a{
+    color: rgb(46, 5, 85);
+    padding: 10px;
+    text-decoration: overline; /* overline, underline*/
+    font-weight: bold;  
+     border-radius: 3px;/*Arrendondamento das vértices*/
+     transition-duration: 0.5s;/*Duração da transição para outro estado*/
+}
+
+nav > a:hover{ /* pseudo-classe- adicionado um estado especiual*/
+    background-color: #db8625;
+    color: white;
+    font-size: 15px;
+}
+
+main{
+    background-color: white;
+    min-width: 320px;/* largura mínima*/
+    max-width: 1000px;/*largura máxima*/
+    margin: auto;/* nesse contexto, atiliza para centralizar o elemento*/
+    margin-top: 6px;
+    padding: 10px; /* espaço interno do elemento*/
+    border-bottom-left-radius: 10px; /*Arredondamento borda inferior esquerda*/
+    border-bottom-right-radius: 10px;/*arredondamento borda inferior direita*/
+    box-shadow: -9px -4px 9px 3px; /*sombra da caixa*/
+    text-align: center;
+}
+
+main h2{
+    background-image: linear-gradient(to right, var(--cor4), transparent);
+    text-align: center; /* alinhamento de texto, centralizado*/
+}
+
+main p{
+    font-size: 18px;
+    text-align: justify; /* alinhamento de texto: center left right justify*/
+    text-indent: 20px;
+    margin: 15px opx;/*fora do elemento, 15px(top, bottom) 0 (left, right)*/ 
+    line-height: 1.5em; /*altura da linha*/
+}
+img{ 
+    width:150px;
+    border: 2px double var(--cor3) ; /*borda: espessura estilo cor*/
+}
+figcaption{
+    font-size: 12px;
+}
+
+
+aside{
+    background-color: rgb(145, 129, 104);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+aside > ul{
+    list-style-position: inside;/* coloca os marcadores da listas dentro da caixa do elemento*/
+    text-align: justify;
+}
+
+aside > h3{
+ background-color: #be8441; /*color*/
+ padding: 2px;
+ margin: -15px -10px 0px; 
+ border-radius: 10px 10px 0 0;
+}
+
+ifreme{ 
+    margin-bottom: 20px;
+}
+
+footer{
+    font-size: 12px; /*backgroud-color, color*/
+    text-align: center;
+    padding: 3px;
+}
+
+footer a{
+    font-weight: bold;
+    text-decoration: none;
+}
